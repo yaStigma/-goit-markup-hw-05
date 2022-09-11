@@ -125,9 +125,12 @@ img {
   align-items: center;
 }
 .link-nav {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
   padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 
   text-decoration: none;
   color: var(--color-text-topic);
@@ -142,6 +145,18 @@ img {
 .active-nav {
   color: var(--color-text-accent);
 }
+.active-nav::after {
+  content: "";
+  width: 106%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--background-color-bt-accent);
+  background-size: contain;
+  margin-top: 28px;
+}
+
+
+
 .link-cont {
   display: flex;
   padding-top: 32px;
