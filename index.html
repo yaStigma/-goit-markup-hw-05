@@ -56,7 +56,7 @@
       <section class="hero">
         <div class="container hero-cont">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-bt" type="button">Замовити послугу</button>
+          <button class="hero-bt" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section advantage">
@@ -115,44 +115,47 @@
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="list work-list">
             <li class="work-item">
-              <div class="work-thumb">              
-              <img
-                class="img"
-                src="./images/image1.jpg"
-                alt="розробка сайту"
-                width="370"
-                height="294"
-              />
-              <div class="work-label">
-                <p class="label-text">Десктопні додатки</p>
+              <div class="work-thumb">
+                <img
+                  class="img"
+                  src="./images/image1.jpg"
+                  alt="розробка сайту"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-label">
+                  <p class="label-text">Десктопні додатки</p>
+                </div>
               </div>
-            </div></li>
+            </li>
             <li class="work-item">
               <div class="work-thumb">
-              <img
-                class="img"
-                src="./images/image2.jpg"
-                alt="розробка мобільного додатку"
-                width="370"
-                height="294"
-              />
-              <div class="work-label">
-                <p class="label-text">Мобільні додатки</p>
+                <img
+                  class="img"
+                  src="./images/image2.jpg"
+                  alt="розробка мобільного додатку"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-label">
+                  <p class="label-text">Мобільні додатки</p>
+                </div>
               </div>
-            </div></li>
+            </li>
             <li class="work-item">
               <div class="work-thumb">
-              <img
-                class="img"
-                src="./images/image3.jpg"
-                alt="розробка дизайну"
-                width="370"
-                height="294"
-              />
-              <div class="work-label">
-                <p class="label-text">Дизайнерські рішення</p>
+                <img
+                  class="img"
+                  src="./images/image3.jpg"
+                  alt="розробка дизайну"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-label">
+                  <p class="label-text">Дизайнерські рішення</p>
+                </div>
               </div>
-            </div></li>
+            </li>
           </ul>
         </div>
       </section>
@@ -551,6 +554,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-bt" type="button" data-modal-close>
+          <svg class="bt-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
