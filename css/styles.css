@@ -12,6 +12,7 @@
   --background-color-social: rgba(255, 255, 255, 0.1);
   --background-color-gradient: rgba(47, 48, 58, 0.4);
   --background-color-overlay: rgba(33, 150, 243, 0.9);
+  --background-color-label: rgba(47, 48, 58, 0.8);
   /*text color*/
   --color-text-main: #757575;
   --color-text-topic: #212121;
@@ -402,6 +403,44 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   line-height: calc(42 / 36);
   text-align: center;
 }
+.work-thumb {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+}
+
+.work-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+background-color: var(--background-color-label);
+}
+.label-text {
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-text-hero);
+}
+
+/* position: relative;  
+width: 370px;
+height: 294px;
+overflow: hidden;
+}
+.overlay-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+
 /*section team*/
 .team {
   background-color: var(--background-color-sect);
@@ -558,7 +597,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-bt:hover,
 .filter-bt:focus {
- 
   
   background-color: var(--background-color-bt-accent);
   color: var(--color-text-hero);
