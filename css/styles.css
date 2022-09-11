@@ -11,6 +11,7 @@
   --background-color-svg: #afb1b8;
   --background-color-social: rgba(255, 255, 255, 0.1);
   --background-color-gradient: rgba(47, 48, 58, 0.4);
+  --background-color-overlay: rgba(33, 150, 243, 0.9);
   /*text color*/
   --color-text-main: #757575;
   --color-text-topic: #212121;
@@ -557,6 +558,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-bt:hover,
 .filter-bt:focus {
+ 
+  
   background-color: var(--background-color-bt-accent);
   color: var(--color-text-hero);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -571,6 +574,33 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .item-project {
   width: 370px;
+}
+.proj-cont {
+position: relative;  
+width: 370px;
+height: 294px;
+overflow: hidden;
+}
+.overlay-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  transform: translatey(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+padding: 63px 24px;
+background-color: var(--background-color-overlay);
+}
+.project-text {
+  font-size: 18px;
+line-height: calc(28 / 18);
+letter-spacing: 0.03em;
+color: var(--color-text-hero);
 }
 
 .proj-box {
@@ -603,8 +633,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   text-decoration: none;
 }
-.link-filter:hover,
+.link-filter:hover ,
 .link-filter:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.link-filter:hover .overlay-project,
+.link-filter:focus .overlay-project {
+  transform: translatey(0%);
 }
