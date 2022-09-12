@@ -134,7 +134,7 @@ img {
   align-items: center;
   flex-wrap: nowrap;
   padding-top: 32px;
-  /* padding-bottom: 32px; */
+  padding-bottom: 32px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -152,6 +152,7 @@ img {
 }
 .active-nav {
   color: var(--color-text-accent);
+  padding-bottom: 0;
 }
 .active-nav::after {
   content: '';
@@ -271,7 +272,6 @@ img {
 }
 .ftr-link-social:hover,
 .ftr-link-social:focus {
-  fill: var(--color-text-hero);
   background-color: var(--background-color-bt-accent);
 }
 
@@ -431,17 +431,7 @@ img {
   color: var(--color-text-hero);
 }
 
-/* position: relative;  
-width: 370px;
-height: 294px;
-overflow: hidden;
-}
-.overlay-project {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; */
+
 
 /*section team*/
 .team {
@@ -546,20 +536,21 @@ overflow: hidden;
 
   fill: var(--background-color-svg);
 
-  transition-property: fill, border;
+  transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 100%;
   height: 100%;
-  border: 1px solid var(--background-color-svg);
+  border: 1px solid;
+  border-color:  var(--background-color-svg);
   border-radius: 4px;
   text-decoration: none;
 }
 .link-client:hover,
 .link-client:focus {
   fill: var(--background-color-bt-accent);
-  border: 1px solid var(--background-color-bt-activ);
+  border-color: var(--background-color-bt-activ);
 }
 .logo-client {
   width: 106px;
